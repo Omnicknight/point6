@@ -39,8 +39,8 @@ const createMonster = (id, nick, style, hp) => {
     };
 };
 
-const sniper = createMonster('1', 'elit', 'sniper', '50');
-const tank = createMonster('2', 'elit', 'tank', '150');
+// const sniper = createMonster('1', 'elit', 'sniper', '50');
+// const tank = createMonster('2', 'elit', 'tank', '150');
 
 // const key = prompt
 
@@ -51,10 +51,10 @@ const tank = createMonster('2', 'elit', 'tank', '150');
 //     }
 // }
 
-const sniperV2 = sniper;
+// const sniperV2 = sniper;
 
-sniperV2.ability = 'headshot';
+// sniperV2.ability = 'headshot';
 
-delete sniperV2.hp;
+// delete sniperV2.hp;
 
-console.log(sniper, sniperV2);
+// console.log(sniper, sniperV2);
