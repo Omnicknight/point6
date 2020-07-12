@@ -1,18 +1,17 @@
-describe('createMonster ', () => {
-    it('should create monster object', () => {
-        const monster = {
-            id: 1,
-            userId: 1,
-            nick: 'elit',
-            style: 'sniper',
-            hp: 50,
+describe('createCopy ', () => {
+    it('should create copy object', () => {
+        let topPC2 = {
+            RAM: 32,
+            GC: 'RTX 2080',
+            CPU: 'i7 8700k',
+            power: 1000,
         }
-        expect(createMonster(1, 'elit', 'sniper', 50)).to.deep.equal(monster);
+        expect(createCopy(topPC2, topPC)).to.not.equal(topPC, topPC2);
     })
 });
 
-describe('Math', () => {
-    it('should do pow', () => {
-        expect(1).to.equal(1);
-    })
-});
+// describe('Math', () => {
+//     it('should do pow', () => {
+//         expect(1).to.equal(1);
+//     })
+// });

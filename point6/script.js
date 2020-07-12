@@ -27,17 +27,21 @@
 
 // console.log(pc);
 
-let globalId = 1;
+// let globalId = 1;
 
-const createMonster = (id, nick, style, hp) => {
-    return {
-        id: globalId++,
-        userId: id,
-        nick: nick,
-        style: style,
-        hp: hp,
-    };
-};
+// const createMonster = (id, nick, style, hp) => {
+//     return {
+//         id: globalId++,
+//         userId: id,
+//         nick: nick,
+//         style: style,
+//         hp: hp,
+//     };
+// };
+
+// console.log(createMonster ());
+// console.log(createMonster ());
+
 
 // const sniper = createMonster('1', 'elit', 'sniper', '50');
 // const tank = createMonster('2', 'elit', 'tank', '150');
@@ -58,3 +62,40 @@ const createMonster = (id, nick, style, hp) => {
 // delete sniperV2.hp;
 
 // console.log(sniper, sniperV2);
+
+let topPC = {
+    RAM: 32,
+    GC: 'RTX 2080',
+    CPU: 'i7 8700k',
+    power: 1000,
+}
+
+// let topPC2 = {};
+
+// function createCopy (newObj, obj) {
+
+//     for (let key in obj) {
+//         newObj[key] = obj[key];
+//     }
+//     return console.log(newObj);
+// }
+
+// createCopy (topPC2, topPC);
+
+
+
+function createCopy (obj) {
+
+    let res = 0;
+
+    for (let key in obj) {
+        // let a = typeof obj[key];
+        if (typeof key === Number) continue;
+        else {
+            res++;
+        }   
+    }
+    return console.log(res);
+}
+
+createCopy(topPC);
