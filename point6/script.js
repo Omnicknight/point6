@@ -84,18 +84,15 @@ let topPC = {
 
 
 
-function createCopy (obj) {
+function strSum (obj) {
 
     let res = 0;
 
     for (let key in obj) {
-        // let a = typeof obj[key];
-        if (typeof key === Number) continue;
-        else {
-            res++;
-        }   
+        if (typeof obj[key] === 'string') res++; 
     }
     return console.log(res);
 }
 
-createCopy(topPC);
+strSum(topPC);
+
