@@ -10,8 +10,9 @@ describe('createCopy ', () => {
     })
 });
 
-// describe('Math', () => {
-//     it('should do pow', () => {
-//         expect(1).to.equal(1);
-//     })
-// });
+describe('strSum ', () => {
+    it('should return sum string', () => {
+        let res = 2;
+        expect(strSum(topPC)).to.equal(2);
+    })
+});

@@ -70,17 +70,17 @@ let topPC = {
     power: 1000,
 }
 
-// let topPC2 = {};
+let topPC2 = {};
 
-// function createCopy (newObj, obj) {
+function createCopy (newObj, obj) {
 
-//     for (let key in obj) {
-//         newObj[key] = obj[key];
-//     }
-//     return console.log(newObj);
-// }
+    for (let key in obj) {
+        newObj[key] = obj[key];
+    }
+    return console.log(newObj);
+}
 
-// createCopy (topPC2, topPC);
+createCopy (topPC2, topPC);
 
 
 
@@ -91,7 +91,7 @@ function strSum (obj) {
     for (let key in obj) {
         if (typeof obj[key] === 'string') res++; 
     }
-    return console.log(res);
+    return res;
 }
 
 strSum(topPC);
